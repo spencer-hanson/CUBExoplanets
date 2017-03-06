@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 import os
 import sys
 from os import listdir
@@ -42,6 +43,16 @@ def startProcessing():
 			keck_names.append(tmp_file);
 	print keck_velfiles['HTR161-009'];		
 
+	fig = plt.figure()
+	plt.title("Velocity vs Observation Number for 10 bodies");
+	plt.xlabel("Observation number");
+
+	plt.ylabel("Velocity of Celestial Body");	
+	for name in keck_names[50:60]:
+		vels = keck_velfiles[name]['vel'][:20];
+		plt.plot(vels, 'k');
+	plt.show();
+	fig.savefig("media/fig1.png");
 
 
 startProcessing();

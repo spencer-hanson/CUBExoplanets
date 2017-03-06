@@ -10,10 +10,10 @@ Colorado University of Boulder Data Science Team Exoplanets Dataset Analysis and
 
 ## Dependencies
 * numpy
-
+* matplotlib
 Install with
 ~~~~
-sudo pip install numpy
+sudo pip install numpy matplotlib
 ~~~~
 
 ## KECK Data columns information 
@@ -47,4 +47,5 @@ Time the observation was taken
 		<td>seconds</td>
 	</tr>
 </table>
-
+## Example graph
+<img src="media/fig1.png"></img>
