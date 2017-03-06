@@ -1,10 +1,16 @@
 import numpy as np
 import os
+import sys
 from os import listdir
+
+def getKeckDataNames():
+	return ["juldate", "vel", "uncert", "sval", "halpha", "mppx", "ex_time"];
 
 def processKeckFile(name):	
 	data = {};
 	filename = "data/" + name + "_KECK.vels";
+	raw_data = [];
+	data_names = getKeckDataNames();
 	data['juldate'] = []; #Julian Dates
 	data['vel'] = []; #Velocities
 	data['uncert'] = []; #Uncertainty of velocities
@@ -12,7 +18,17 @@ def processKeckFile(name):
 	data['halpha'] = []; #H Alpha values
 	data['mppx'] = []; #Median photons per pixel
 	data['ex_time'] = []; #Exposure time
-	
+
+	with open(filename) as f:
+		raw_data = f.readlines();
+	for i in range(0, len(raw_data)):
+		raw_data[i] = raw_data[i].strip();
+		split_data = raw_data[i].split();
+		if not len(split_data) == len(data_names):
+			print "We have a problem!";
+			sys.exit("Oh no!");
+		for i in range(0, len(data_names)):
+			data[data_names[i]].append(split_data[i]);	
 	return data;
 
 def startProcessing():
