@@ -44,13 +44,13 @@ def startProcessing():
 	print keck_velfiles['HTR161-009'];		
 
 	fig = plt.figure()
-	plt.title("Velocity vs Observation Number for 10 bodies");
+	plt.title("Velocity vs Observation Number");
 	plt.xlabel("Observation number");
 
 	plt.ylabel("Velocity of Celestial Body");	
-	for name in keck_names[50:60]:
+	for name in keck_names:
 		vels = keck_velfiles[name]['vel'][:20];
-		plt.plot(vels, 'k');
+		plt.plot(vels, 'o');
 	plt.show();
 	fig.savefig("media/fig1.png");
 
