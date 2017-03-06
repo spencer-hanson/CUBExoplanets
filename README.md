@@ -31,11 +31,11 @@ Time the observation was taken
 		<td>m/s</td>
 	</tr><tr>
 		<td>S Value</td>
-		<td>description goes here</td>
+		<td>description goes here, -1 means the measurement couldn't have been made</td>
 		<td>units go here</td>
 	</tr><tr>
 		<td>H Alpha</td>
-		<td>desc here</td>
+		<td>desc here, -1 means the measurement couldn't have been made</td>
 		<td>unit here</td>
 	</tr><tr>
 		<td>MPPX</td>
