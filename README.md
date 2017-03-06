@@ -1,7 +1,14 @@
 # CUBExoplanets
 Colorado University of Boulder Data Science Team Exoplanets Dataset Analysis and Exploration
+###Citations
+* Butler, Vogt, Laughlin et al. 2017, AJ, in print
 
-## This project uses
+* KECK Data from <a href="http://home.dtm.ciw.edu/ebps/data/">here</a>
+
+* ExoPlanet Data from <a href="http://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=planets">here</a>
+
+
+## Dependencies
 * numpy
 
 Install with
