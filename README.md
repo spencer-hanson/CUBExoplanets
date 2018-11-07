@@ -47,5 +47,7 @@ Time the observation was taken
 		<td>seconds</td>
 	</tr>
 </table>
+
 ## Example graph
+
 <img src="media/fig1.png"></img>
