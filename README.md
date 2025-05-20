@@ -1,6 +1,7 @@
 # CUBExoplanets
 Colorado University of Boulder Data Science Team Exoplanets Dataset Analysis and Exploration
-###Citations
+
+### Citations
 * Butler, Vogt, Laughlin et al. 2017, AJ, in print
 
 * KECK Data from <a href="http://home.dtm.ciw.edu/ebps/data/">here</a>
